@@ -23,7 +23,7 @@ html,body{
 #box{
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 3%;
     transform:translate(-50%,0%);
     width: 60%;
     height: 40%;
@@ -40,7 +40,7 @@ html,body{
 h1{
     position: relative;
     left: 50%;
-    top:48%;
+    top:46%;
     transform:translate(-50%,0%);
     background-color: ;
     width: 80%;
