@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    border: 0px solid red;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+html,body{
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(90deg, #ffffff,#77a3ee7a);
+    font-size: 20px;
+    overflow-x: hidden;
+    z-index:5
+    zoom: 0;
+    
+}
+#page1{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    background-color: ;
+    margin-bottom: 30px;
+}
+#page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+#text{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 50%;
+    height: max-content;
+
+}
+#text h1{
+    font-family: Roboto;
+    font-size: 12vw;
+}
+#p{
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    
+    width: 50%;
+    height: max-content;
+    text-align: center;
+    font-weight: 400;
+    font-size: 5vw;
+}
+#page2{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 25px;
+}
+#t1{
+    width: 100%;
+    opacity:1;
+    position:relative;
+    top: -2%;
+    text-align: center;
+    background-color:;
+    font-size: 14vw;
+    
+    
+}
+#products{
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr); 
+    
+}
+.productbox{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#d9d9d97a;
+   height: 20vh;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px white solid;
+    color: black;
+}
+.imgbox{
+    width:130px;
+    height: 130px;
+    position: absolute;
+    top:50%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    scale: 1;
+    border-radius: 50%;
+    background-color: black;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.textbox{
+    background-color: transparent;
+    position: absolute;
+    left:45%;
+    top: 35px;
+    width: 50%;
+    height: 70px;
+}
+.price{
+    position: absolute;
+    font-size: 20px;
+    left: 45%;
+    top: 65%;
+    width: 25%;
+    padding: 1vw;
+    height: max-content;
+    border-radius: 20px;
+    background-color: transparent ;
+}
+#page3{
+    width: 100%;
+    height: max-content;
+    background-color: ;
+    position: relative;
+}
+#custom_img{
+    background-color: ;
+    position: relative;
+    width:40%;
+    height: 200px;
+    top: 5vh;
+    left:55vw;
+    border-radius: 3vw;
+    
+}
+#custom_img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 3vw;
+}
+#c_text{
+    font-size: 14vw;
+    width: 30%;
+    position: relative;
+    top:-165px;
+    left: 10%;
+}
+#page3 button{
+    width: 60%;
+    height: 60px;
+    position: absolute;
+    background-color: #518ff3;
+    top: 70%;
+    left: 50%;
+    font-size: 8vw;
+    transform: translate(-50%,0%);
+    padding: 4vw;
+    border-radius: 40vw;
+}
+#page3 button:hover{
+    color:white;
+    box-shadow: 5px 5px 5px #32a2ffc6,
+               -5px -5px 5px  #32a2ffc6,
+               -5px 5px 5px  #32a2ffc6,
+                5px -5px 5px  #32a2ffc6;
+}
+#page4{
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+#page4 ul{
+    font-size: 4vw;
+    display:flex;
+    align-items: center;
+    color: black;
+    
+}
+#page4 svg{
+    width: 4vw;
+}
+#page4{
+    font-size: 5vw;
+}
+.un{
+    text-decoration: none;
+}
+.un:hover{
+   transform: scalex(1.2);
+   transform-origin: left;
+    transition: 0.2s ease-in-out;
+}
+@media (width > 600px){
+    .productbox{
+        width: 90%;
+        height: 90%;
+        top: 65%;
+    }
+    #products{
+        grid-template-columns:repeat(2,50%);
+        
+    }
+    #t1{
+        top: -5%;
+    }
+    #custom_img{
+        top: 15vh;
+        left: 60vw;
+        width: 500px;
+        height: 600px;
+    }
+    #c_text{
+        top: -450px;
+        width: 50%;
+    }
+    #page3 button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw;
+        width:50%;
+        height: 120px;
+    }
+    .imgbox{
+        width: 250px;
+        height: 250px;
+        
+    }
+    .price{
+        width: max-content;
+        height: 50px;
+        font-size: 36px;
+        
+    }
+    #products button{
+       width: 25%; 
+       padding: 5px;
+       font-size: 36px;
+    }
+    .textbox{
+        top: 35%;
+        font-size: 40px;
+        height: 150px;
+    }
+    #page4 ul{
+        font-size:2vw;
+    }
+    #page4 svg{
+        width:2vw;
+    }
+    #page4{
+        font-size: 34px;
+    }
+}
