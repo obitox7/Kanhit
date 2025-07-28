@@ -4,25 +4,25 @@ const productId =params.get("id");
 
 const products = {
     1:{
-        image:"images/p1.jpg",
+        image:"images/p1.webp",
         title :"Sweet heat sweater",
         description :"A cozy, handcrafted sweater featuring vibrant red and pink stripes with a bold heart motif at the center — perfect for chilly days with a touch of love.",
         price :"₹1999"
     },
         2:{
-        image :"images/p2.jpg",
+        image :"images/p2.webp",
         title :"pastel ruffle bag",
         description :"A soft pink crochet handbag trimmed with creamy ruffles and satin bows, combining cuteness with charm. A dainty and delightful accessory for any outfit.",
         price :"₹799"
     },
         3:{
-        image :"images/p3.jpg",
+        image :"images/p3.webp",
         title :"chick on a swing night lamp",
         description :"A whimsical crochet chick sits on a swing beneath blooming flowers, all lit by warm fairy lights — perfect as a cozy desk lamp or dreamy room decor.",
         price :"₹699"
     },
         4:{
-        image :"images/p4.jpg",
+        image :"images/p4.webp",
         title :"Denim Blue Crochet Co-Ord Set",
         description :"This stunning handmade co-ord set includes a fitted crop top with heart lacework and a flowy skirt — crafted in denim-tone yarn for a playful yet elegant look.",
         price :"₹2500"
@@ -36,10 +36,10 @@ if (product){
     document.getElementById("image").src =product.image;}
     else{};
     function buy(){
-        const Msg="hi i would like to order"+ product.title;
-        const encodemsg=encodeURIComponent(Msg);
-        const URL="https://wa.me/918899398719?text="+encodemsg;
-        window.open(URL,"_blank");
+        
+    localStorage.setItem("productTitle", product.title);
+    localStorage.setItem("productPrice", product.price);
+    window.location.href = "index3.html";
     };
     gsap.from("#parent",{
         opacity:0,
